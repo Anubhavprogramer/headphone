@@ -14,209 +14,205 @@
 
 <body>
     <header>
-        <img src="Headphones SVG Vector Icon.jpg" alt="">
-        <span class="logo">Headfone</span>
+        <img src="./assets/Headphones SVG Vector Icon.jpg" alt="">
+        <span class="logo"><a href="">Headfone</a></span>
         <div class="navbar">
             <ul>
-                <li><a href=""></a>On sale</li>
-                <li><a href=""></a>Categories</li>
-                <li><a href=""></a>Brand</li>
-                <li><a href=""></a>Price</li>
-                <li><a href=""></a>info</li>
-                <li><a href=""></a>Help Center</li>
+                <li><a href="">Home</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#products">Top-Products</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#footer_container">Contacts</a></li>
             </ul>
         </div>
         <div class="discreption">
-            <img class="header_img" src="search.png" alt="">
-            <img class="header_img" src="profile.png" alt="">
-            <img class="header_img" src="shopping.png" alt="">
+            <img class="header_img" src="./assets/search.png" alt="">
+            <img class="header_img" src="./assets/profile.png" alt="">
+            <img class="header_img" src="./assets/shopping.png" alt="">
     </header>
+
+
+
     <div class="imagecontainer">
         <span>Let Your Ears Get Some Good Experience</span>
         <button class="shopnow">Shop now</button>
     </div>
-    <div class="text">
-        <h1>Like You, We Love Music</h1>
-        <span>And we believe a Headphone is more than just an instrument for sound. It’s the key to a mind-blowing
-            moment of emotion, bringing you closer to your favourite artist, and yourself.</span>
+
+    <section id="price" class="range-section">
+        <h2>Get your pocket friendly headsets</h2>
+        <p>Use slider or enter max and min price</p>
+        <div class="range_container">
+            <div class="prizerange">
+                <label for="max">Max</label>
+                <input type="number" id="max" placeholder="MAX">
+
+                <span class="saperator">-</span>
+
+                <label for="min">Min</label>
+                <input type="number" name="" placeholder="MIN" id="min">
+            </div>
+            <div class="ranges">
+                <div class="sliderValue">
+                </div>
+                <div class="max_input">
+                    <span class="price_tag">Maximum price</span>
+                    <span>0</span>
+                    <input id="slider" type="range" max="10000" min="100" step="100 " value="85000">
+                    <span>10000</span>
+                </div>
+                <div class="min_input">
+                    <span class="price_tag">Minimum price</span>
+                    <span>0</span>
+                    <input id="slider" type="range" max="10000" min="100" step="100 " value="85000">
+                    <span>10000</span>
+                </div>
+                <div class="filter_button">
+                    <button class="sort">Sort</button>
+                    <button class="sort">clear</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="products">
+
+        <div class="text">
+            <h1>Like You, We Love Music</h1>
+            <span>And we believe a Headphone is more than just an instrument for sound. It’s the key to a mind-blowing
+                moment of emotion, bringing you closer to your favourite artist, and yourself.</span>
+        </div>
+        <div class="item">
+            <div class="item-1">
+                <img src="./assets/i4.jpg" alt="">
+                <div class="item-discreption">
+                    <span>Harmony Beats Pro</span>
+                    <p>Experience exceptional sound quality with the Harmony Beats Pro headphones. These over-ear
+                        headphones deliver rich, immersive audio with deep bass and crystal-clear highs. The comfortable
+                        design and noise-cancelling technology make them perfect for long listening sessions or travel.
+                    </p>
+                    <button class="item-btn">Add To Cart</botton>
+                        <button class="item-btn2">Shop now</botton>
+                </div>
+
+            </div>
+            <div class="item-1">
+                <div class="item-discreption">
+                    <span>Eclipse Wireless Freedom</span>
+                    <p>The Eclipse Wireless Freedom headphones offer true wireless convenience and style. These sleek
+                        in-ear buds provide a secure fit, delivering impressive sound quality and long battery life.
+                        With touch controls and a portable charging case, they're perfect for on-the-go music lovers.
+                    </p>
+                    <button class="item-btn">Add To Cart</botton>
+                        <button class="item-btn">Shop now</botton>
+                </div>
+                <img src="./assets/i1.jpg" alt="">
+
+            </div>
+            <div class="item-1">
+                <img src="./assets/i2.jpg" alt="">
+                <div class="item-discreption">
+                    <span>Xtreme Bass BlastX</span>
+                    <p>Get ready to feel the music with the Xtreme Bass BlastX headphones. These on-ear headphones pack
+                        a punch with their powerful bass response and built-in equalizer. They're perfect for those who
+                        crave intense, dynamic audio experiences.</p>
+                    <button class="item-btn">Add To Cart</botton>
+                        <button class="item-btn">Shop now</botton>
+                </div>
+
+            </div>
+            <div class="item-1">
+                <div class="item-discreption">
+                    <span>Aurora Skylight Serenity</span>
+                    <p>Experience serenity and style with the Aurora Skylight Serenity headphones. These
+                        noise-cancelling over-ear headphones offer a peaceful listening environment, while the
+                        customizable LED lights provide a unique, eye-catching look. Ideal for music enthusiasts who
+                        value both aesthetics and sound quality..</p>
+                    <button class="item-btn">Add To Cart</botton>
+                        <button class="item-btn">Shop now</botton>
+                </div>
+                <img src="./assets/i3.jpg" alt="">
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section id="review">
+        <div class="comment-section">
+            <div class="comments-list" id="comments-list">
+                <h2>Comments</h2>
+                <!-- Comments will be displayed here -->
+            </div>
+            <div class="comment-form">
+                <h3>Add a Comment</h3>
+                <input type="text" id="name" placeholder="Your Name">
+                <textarea id="comment" rows="12" placeholder="Your Comment"></textarea>
+                <button id="submit-button">Submit</button>
+            </div>
+        </div>
+    </section>
+    <section id="footer_container">
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <ul class="social-media-links">
+                        <li><a href="#" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#" target="_blank"><img src="assets/image-260nw-2336427615.jpg" alt="Twitter"></a>
+                        </li>
+                        <li><a href="#" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#" target="_blank"><img src="assets/linkdin.png" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <ul class="faq-list">
+                        <li><a id="open-popup1" href="#q1">How do I place an order?</a></li>
+                        <li><a id="open-popup2" href="#q2">What payment method do you accept?</a></li>
+                        <li><a id="open-popup3" href="#q3">How can I track my order?</a></li>
+                        <li><a id="open-popup4" href="#q4">What is your return policy?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>If You Know, You Know (IYKYK)</h3>
+                    <p>Our headphones deliver a sound experience like no other. It's not just music; it's magic.
+                        Experience it to believe it.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Your Headphone Store</p>
+            </div>
+        </footer>
+    </section>
+    <div class="answers" id="q1">
+        <h5>How do i place an order?</h5>
+        <p>To place an order you should select the respected product. Add it to your cart and then select more and then go for payment option and add your credentials and than place the order </p>
+        <div class="buttoncantainer">
+            <button id="close-popup">close</button>
+        </div>
     </div>
-    <div class="item">
-        <div class="item-1">
-            <img src="i1.jpg" alt="">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                <button class="item-btn">Add To Cart</botton>
-                    <button class="item-btn2">Shop now</botton>
-            </div>
-
+    <div class="answers" id="q2"><h5>How do i place an order?</h5>
+        <p>To place an order you should select the respected product. Add it to your cart and then select more and then go for payment option and add your credentials and than place the order </p>
+        <div class="buttoncantainer">
+            <button id="close-popup">close</button></div>
         </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                <button class="item-btn">Add To Cart</botton>
-                    <button class="item-btn">Shop now</botton>
-            </div>
-            <img src="i2.jpg" alt="">
-
+    <div class="answers" id="q3"><h5>How do i place an order?</h5>
+        <p>To place an order you should select the respected product. Add it to your cart and then select more and then go for payment option and add your credentials and than place the order </p>
+        <div class="buttoncantainer">
+            <button id="close-popup">close</button></div>
         </div>
-        <div class="item-1">
-            <img src="i3.jpg" alt="">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                <button class="item-btn">Add To Cart</botton>
-                    <button class="item-btn">Shop now</botton>
-            </div>
-
+    <div class="answers" id="q4"><h5>How do i place an order?</h5>
+        <p>To place an order you should select the respected product. Add it to your cart and then select more and then go for payment option and add your credentials and than place the order </p>
+        <div class="buttoncantainer">
+            <button id="close-popup">close</button></div>
         </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                    <button class="item-btn">Add To Cart</botton>
-                        <button class="item-btn">Shop now</botton>
-                        </div>
-                        <img src="i4.jpg" alt="">
 
-        </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                    <button class="item-btn">Add To Cart</botton>
-                        <button class="item-btn">Shop now</botton>
-                        </div>
-                        <img src="i4.jpg" alt="">
-
-        </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                    <button class="item-btn">Add To Cart</botton>
-                        <button class="item-btn">Shop now</botton>
-                        </div>
-                        <img src="i4.jpg" alt="">
-
-        </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                    <button class="item-btn">Add To Cart</botton>
-                        <button class="item-btn">Shop now</botton>
-                        </div>
-                        <img src="i4.jpg" alt="">
-
-        </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                    <button class="item-btn">Add To Cart</botton>
-                        <button class="item-btn">Shop now</botton>
-                        </div>
-                        <img src="i4.jpg" alt="">
-
-        </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                    <button class="item-btn">Add To Cart</botton>
-                        <button class="item-btn">Shop now</botton>
-                        </div>
-                        <img src="i4.jpg" alt="">
-
-        </div>
-        <div class="item-1">
-            <div class="item-discreption">
-                <span>JBL Live Pro 2 TWS True Wireless</span>
-                <p>JBL is an American manufacturer that offers various audio equipment like speakers and headphones. A
-                    subsidiary of Harman, most of their extensive lineup of headphones feature a very neutral and
-                    accurate default sound profile, which will please most listeners.</p>
-                    <button class="item-btn">Add To Cart</botton>
-                        <button class="item-btn">Shop now</botton>
-                        </div>
-                        <img src="i4.jpg" alt="">
-
-        </div>
-        
-    </div>
-
-    <footer>
-        <ul>
-            <li>Wireless Headphones</li>
-            <li>Over-Ear Headphones</li>
-            <li>In-Ear Headphones</li>
-            <li>Noise-Canceling Headphones</li>
-            <li>Contact Us</li>
-            <li>FAQs</li>
-            <li>Return Policy</li>
-            
-        </ul>
-        <ul>
-            <li>Wireless Headphones</li>
-            <li>Over-Ear Headphones</li>
-            <li>In-Ear Headphones</li>
-            <li>Noise-Canceling Headphones</li>
-            <li>Contact Us</li>
-            <li>FAQs</li>
-            <li>Return Policy</li>
-            
-        </ul>
-        <ul>
-            <li>Wireless Headphones</li>
-            <li>Over-Ear Headphones</li>
-            <li>In-Ear Headphones</li>
-            <li>Noise-Canceling Headphones</li>
-            <li>Contact Us</li>
-            <li>FAQs</li>
-            <li>Return Policy</li>
-            
-        </ul>
-        <ul>
-            <li>Wireless Headphones</li>
-            <li>Over-Ear Headphones</li>
-            <li>In-Ear Headphones</li>
-            <li>Noise-Canceling Headphones</li>
-            <li>Contact Us</li>
-            <li>FAQs</li>
-            <li>Return Policy</li>
-            
-        </ul>
-        <ul>
-            <li>Wireless Headphones</li>
-            <li>Over-Ear Headphones</li>
-            <li>In-Ear Headphones</li>
-            <li>Noise-Canceling Headphones</li>
-            <li>Contact Us</li>
-            <li>FAQs</li>
-            <li>Return Policy</li>
-            
-        </ul>
-        
-    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

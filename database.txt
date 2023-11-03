@@ -1,0 +1,105 @@
+Database Design:
+- Choose an RDBMS (e.g., MySQL, PostgreSQL, SQLite).
+- Create a new database for your e-commerce website.
+
+Schema Design:
+a. Product Section:
+- Create a table named `Products`.
+- Sample `Products` table schema:
+  - `product_id` (Primary Key)
+  - `name`
+  - `description`
+  - `price`
+  - `category`
+  - `brand`
+  - `image_url`
+  - `stock_quantity`
+  - `created_at`
+
+b. Price Filter Section:
+- Handle price range filtering on the frontend using JavaScript.
+
+c. Gallery Section:
+- Create a table named `ProductImages`.
+- Sample `ProductImages` table schema:
+  - `image_id` (Primary Key)
+  - `product_id` (Foreign Key referencing `Products`)
+  - `image_url`
+  - `description`
+
+d. Reviews Section:
+- Create a table named `ProductReviews`.
+- Sample `ProductReviews` table schema:
+  - `review_id` (Primary Key)
+  - `product_id` (Foreign Key referencing `Products`)
+  - `user_id` (Foreign Key if applicable)
+  - `rating`
+  - `review_text`
+  - `created_at`
+
+e. Contact Us Section:
+- Store contact form submissions in a separate `Contacts` table.
+- Sample `Contacts` table schema:
+  - `contact_id` (Primary Key)
+  - `name`
+  - `email`
+  - `message`
+  - `created_at`
+
+Data Relationships:
+- Define foreign key constraints to establish relationships between tables (e.g., `product_id` in `ProductImages` and `ProductReviews` references the `Products` table's primary key).
+
+Database Normalization:
+- Normalize the database to reduce redundancy and improve data integrity.
+
+Indexing:
+- Create indexes on columns used for searching (e.g., `product_id`) to optimize query performance.
+
+API and Backend Integration:
+- Develop a backend API to interact with the database and serve data to your e-commerce website's frontend.
+
+Remember to consider additional tables, user management, security measures, scalability, and performance optimization as needed. Implement data validation and sanitization for security.
+
+
+
+Database Design Extension:
+1. User Database:
+
+   a. User Information:
+   - Create a table named Users to store user information.
+   - Sample Users table schema:
+     - user_id (Primary Key)
+     - username (User's username)
+     - email (User's email address)
+     - password (Hashed password)
+     - created_at (Registration date)
+
+   b. User Cart:
+   - Create a table named UserCart to store the contents of a user's shopping cart.
+   - Sample UserCart table schema:
+     - cart_id (Primary Key)
+     - user_id (Foreign Key referencing Users)
+     - product_id (Foreign Key referencing Products)
+     - quantity (Number of items in the cart)
+
+   c. User Orders:
+   - Create a table named UserOrders to store information about the user's past orders.
+   - Sample UserOrders table schema:
+     - order_id (Primary Key)
+     - user_id (Foreign Key referencing Users)
+     - order_date (Date and time of the order)
+     - status (Order status, e.g., "shipped," "delivered")
+     - total_amount (Total order amount)
+
+2. Data Relationships:
+   - Establish relationships between the new Users, UserCart, and UserOrders tables using foreign keys.
+
+3. Database Normalization:
+   - Normalize the user database tables to minimize data redundancy and improve data integrity.
+
+4. Authentication and Security:
+   - Implement user authentication and security measures to protect user data, including hashed password storage and secure user sessions.
+
+Ensure that your backend API supports user authentication and provides the necessary endpoints to manage user-related operations like adding items to the cart, placing orders, and viewing order history.
+
+Remember to implement data validation and sanitization for user input to enhance security, and consider scalability as your user base and order history grow.
