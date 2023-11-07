@@ -1,0 +1,52 @@
+[
+    {
+        "image_id": "001",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "002",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "003",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "004",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "005",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "006",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "007",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "008",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "009",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    },
+    {
+        "image_id": "010",
+        "product_id": "Foreign Key referencing Products",
+        "image_url":"url"
+    }
+]

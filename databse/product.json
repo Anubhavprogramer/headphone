@@ -1,0 +1,113 @@
+[
+    {
+      "product_id": "1",
+      "name": "Sony WH-1000XM4",
+      "description": "Wireless Noise-Canceling Headphones",
+      "price": 349.99,
+      "category": "Over-Ear Headphones",
+      "brand": "Sony",
+      "image_url": "sony_wh1000xm4.jpg",
+      "stock_quantity": 50,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "2",
+      "name": "Bose QuietComfort 35 II",
+      "description": "Wireless Noise-Canceling Headphones",
+      "price": 299.99,
+      "category": "Over-Ear Headphones",
+      "brand": "Bose",
+      "image_url": "bose_qc35ii.jpg",
+      "stock_quantity": 45,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "3",
+      "name": "Sennheiser HD 660 S",
+      "description": "Open-Back Over-Ear Headphones",
+      "price": 499.99,
+      "category": "Over-Ear Headphones",
+      "brand": "Sennheiser",
+      "image_url": "sennheiser_hd660s.jpg",
+      "stock_quantity": 30,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "4",
+      "name": "Apple AirPods Pro",
+      "description": "Wireless Noise-Canceling Earbuds",
+      "price": 249.00,
+      "category": "In-Ear Headphones",
+      "brand": "Apple",
+      "image_url": "apple_airpods_pro.jpg",
+      "stock_quantity": 60,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "5",
+      "name": "Audio-Technica ATH-M50x",
+      "description": "Professional Studio Monitor Headphones",
+      "price": 149.00,
+      "category": "Over-Ear Headphones",
+      "brand": "Audio-Technica",
+      "image_url": "audio_technica_ath_m50x.jpg",
+      "stock_quantity": 40,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "6",
+      "name": "Sony WF-1000XM4",
+      "description": "Wireless Noise-Canceling Earbuds",
+      "price": 249.99,
+      "category": "In-Ear Headphones",
+      "brand": "Sony",
+      "image_url": "sony_wf1000xm4.jpg",
+      "stock_quantity": 55,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "7",
+      "name": "Beats Solo Pro",
+      "description": "Wireless On-Ear Headphones",
+      "price": 299.95,
+      "category": "On-Ear Headphones",
+      "brand": "Beats by Dre",
+      "image_url": "beats_solo_pro.jpg",
+      "stock_quantity": 20,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "8",
+      "name": "Bowers & Wilkins PX7",
+      "description": "Wireless Over-Ear Headphones",
+      "price": 399.99,
+      "category": "Over-Ear Headphones",
+      "brand": "Bowers & Wilkins",
+      "image_url": "bowers_wilkins_px7.jpg",
+      "stock_quantity": 15,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "9",
+      "name": "JBL Free X",
+      "description": "True Wireless In-Ear Headphones",
+      "price": 79.95,
+      "category": "In-Ear Headphones",
+      "brand": "JBL",
+      "image_url": "jbl_free_x.jpg",
+      "stock_quantity": 25,
+      "created_at": "2023-11-03"
+    },
+    {
+      "product_id": "10",
+      "name": "Skullcandy Crusher Evo",
+      "description": "Wireless Over-Ear Headphones",
+      "price": 149.99,
+      "category": "Over-Ear Headphones",
+      "brand": "Skullcandy",
+      "image_url": "skullcandy_crusher_evo.jpg",
+      "stock_quantity": 35,
+      "created_at": "2023-11-03"
+    }
+  ]
+  
