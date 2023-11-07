@@ -1,0 +1,15 @@
+[
+    {
+        "user_id":"001",
+        "user_name":"dummy name ",
+        "email":"dummy@12345@gmail.com",
+        "password":"123456",
+        "created_at":"12-23-34",
+        "cart_count":"",
+        "product_id":"list fo product ids",
+        "order_id":"id",
+        "order_date":"date",
+        "status":"shipped",
+        "total_amount":""
+    }
+]
