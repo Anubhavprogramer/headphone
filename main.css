@@ -426,19 +426,19 @@ h2, h3 {
 .answers{
     display: none;
     position: fixed;
-    top: 30%;
-    left: 40%;
+    top: 20%;
+    left: 30%;
     z-index: 1;
     padding: 15px;
-    height: 300px;
-    width: 300px;
-    /* border: 2px solid black; */
-    border-radius: 10%;
+    height: 500px;
+    width: 500px;
+    overflow: auto;
+    border-radius: 4%;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
 }
-#close-popup{
+#close-popup1,#close-popup2,#close-popup3,#close-popup4{
     width: 80px;
     height: 30px;
     background-color: blue;
