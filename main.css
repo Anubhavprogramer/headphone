@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:wght@500;800&display=swap');
 * {
     padding: 0px 0px;
     margin: 0px;
     /* font-family: 'Arimo', sans-serif;
 font-family: 'Belanosima', sans-serif; */
 }
+
 
 body{
     background-color: rgb(108, 102, 102);
@@ -140,52 +142,96 @@ header>img {
 }
 
 .item {
-    height: 200vh;
+    height: max-content;
     width: 100%;
-}
-
-.item-1 {
-    height: 35vh;
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin: 50px auto;
-    padding: 30px 40px;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
-
-.item-1>img {
-    height: 60%;
-    width: 300px;
-    border-radius: 30px;
+.card{
+    height: 700px;
+    width: 1000px;
+    background-color: rgb(120, 25, 158);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr,1fr 1fr;
+    border-radius: 3%;
 }
-
-.item-discreption>span {
-    position: relative;
-    left: 30px;
+.images{
+    padding: 3%;
+}
+.images img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+.data{
+    padding: 3%;
+}
+.data h1{
+    font-family: 'Montserrat', sans-serif;
+    width: 430px;
+    height: 130px;
+    padding: 10px 0px;
     font-size: 50px;
-    font-family: 'Belanosima', sans-serif;
+    color: white;
 }
-
-.item-discreption>p {
-    font-size: 18px;
-    padding: 15px 30px;
-    font-family: 'Arimo', sans-serif;
+.data p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    font-size: 20px;
+    height: 119px;
+    width: 401px;
 }
-
-.item-btn, .item-btn2 {
+.price ,.likes{
+    height: 42px;
+    width: 255px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 800px;
+    display: inline-block;
+}
+.buttons_container{
+    
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: ;
+    flex-direction: column;
+}
+.buttoncantainer span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.buttons_container span strong{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;   
+}
+.otherinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.buttons{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* padding: 20px 20px; */
+    grid-template-columns: auto auto auto auto;
+}
+.triange {
+    background: none;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    outline: none;
+}
+.rectangle{
+    border-radius: 10px;
+    width: 150px;
     height: 60px;
-    width: 160px;
-    font-family: 'Belanosima', sans-serif;
-    font-size: 25px;
-    border: 2px solid black;
-    border-radius: 25px;
-    margin-left: 40px;
     cursor: pointer;
 }
-
-
 
 
 /* prizing setion */
