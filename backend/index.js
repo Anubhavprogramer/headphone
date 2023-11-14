@@ -1,33 +1,33 @@
-const { MongoClient } = require("mongodb");
+const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://dubeyanubhav12345:anubhav123@cluster0.j16vqjj.mongodb.net/?retryWrites=true&w=majority';
-const client = new MongoClient(uri);
+const uri = 'mongodb+srv://dubeyanubhav12345:anubhav123@cluster0.j16vqjj.mongodb.net/?retryWrites=true&w=majority/headfonedb';
+mongoose.connect(uri);
+
+const productSchema = new mongoose.Schema({
+    product_id: String,
+    name: String,
+    description: String,
+    price: Number,
+    category: String,
+    brand: String,
+    image_url: String,
+    stock_quantity: Number,
+    created_at: String,
+    product_link: String
+});
+
+const Products = new mongoose.model("Product", productSchema);
 
 const main = async () => {
     try {
-        await client.connect();
-        console.log("Connected to the database");
-
-        const db = client.db("headfonedb");
-        const collection = db.collection("Products");
-
-        const data = await collection.find({ price: { $gt: 300 } }).toArray();
+        const data = await Products.find({ price: { $gt: 100 } });
         console.log("Retrieved data:", data);
-
-        return "done";
+    } catch (error) {
+        console.error("Error:", error);
     } finally {
-        await client.close();
+        mongoose.connection.close();
         console.log("Connection closed");
     }
-};
+}
 
-main()
-    .then(() => {
-        console.log("done again");
-    })
-    .catch((e) => {
-        console.log("Error:", e);
-    })
-    .finally(() => {
-        console.log("Script finished");
-    });
+main();
