@@ -149,7 +149,7 @@ header>img {
 }
 .card{
     height: 600px;
-    width: 1000px;
+    width: 1300px;
     background-color: rgb(120, 25, 158);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,11 +192,8 @@ header>img {
 }
 .buttons_container{
     
-    padding: 3%;
-    /* width: 100%;
-    height: 100%; */
+    padding: 1% 3%;
     display: flex;
-    justify-content: ;
     flex-direction: column;
 }
 .buttoncantainer span{
@@ -210,15 +207,25 @@ header>img {
 .otherinfo{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 40px;
 }
 .buttons{
+
     height: 100%;
     width: 100%;
     display: grid;
-    /* padding: 20px 20px; */
-    grid-template-columns: auto auto auto auto;
-    padding-top: 20px;
+    grid-template-columns: 70px 160px 160px 50px;
 }
+.buttons > .triange > img{
+    width: 40px;
+}
+
+.buttons > .rectangle{
+    width: 150px;
+    height: 45px;
+    margin-top: 10px;
+}
+
 .triange {
     background: none;
     padding: 0;
@@ -235,23 +242,25 @@ header>img {
     border: none;
 }
 .top_comments{
-    /* height: 100%;
-    width: 100%; */
     background-color: black;
-    /* overflow: hidden; */
+    width: 635px;
+    height: 200px;
+    border-radius: 20px;
+}
+.top_comments > span{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 10px;
+    left: 20px;
 }
 
-
-/* prizing setion */
-
 .range-section{
-    margin: 200px 102px;
-    padding: 30px 40px;
-    border: 2px solid rgb(29, 55, 29);
-    border-radius: 20px;
+    /* margin: 200px 102px; */
+    padding: 30px 125px;
     background-color: rgb(29, 55, 29);
     color: white;
-    height: 70vh;
+    height: 50vh;
 }
 .range-section > h2{
     display: flex;
@@ -341,16 +350,16 @@ header>img {
     cursor: pointer;
     margin: 0px 30px;
 }
-#review{
+/* #review{
     height: 100vh;
-}
+} */
 
 .comment-section {
     background-color: #233f17;
     margin: 10px 102px;
-    padding: 10px 10px;
+    padding: 40px 10px;
     width: 85%;
-    height: 80%;
+    height: max-content;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
@@ -374,7 +383,6 @@ h2, h3 {
 .comments-list > h2{
     display: flex;
     justify-content: center;
-    padding: 30px 20px;
 }
 
 .comment {
@@ -391,7 +399,6 @@ h2, h3 {
 .comment-form >h3{
     display: flex;
     justify-content: center;
-    padding: 30px 20px;
 }
 .comment-form input, .comment-form textarea {
     width: 100%;
@@ -484,7 +491,7 @@ h2, h3 {
     left: 30%;
     z-index: 1;
     padding: 15px;
-    height: 500px;
+    height: max-content;
     width: 500px;
     overflow: auto;
     border-radius: 4%;
